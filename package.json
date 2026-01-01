@@ -14,9 +14,12 @@
     "@account-kit/core": "^4.35.1",
     "@account-kit/infra": "^4.35.1",
     "@account-kit/react": "^4.35.1",
+    "@alchemy/aa-accounts": "^3.19.0",
+    "@alchemy/aa-core": "^3.19.0",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tooltip": "^1.2.7",
-    "@tanstack/react-query": "^5.50.1",
+    "@tanstack/react-query": "^5.90.16",
+    "@wagmi/core": "^3.0.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.511.0",
@@ -26,8 +29,8 @@
     "react-dom": "^18",
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "2.30.0",
-    "wagmi": "2.15.4"
+    "viem": "^2.43.4",
+    "wagmi": "^2.15.4"
   },
   "devDependencies": {
     "@types/node": "^20",
