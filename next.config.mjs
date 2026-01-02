@@ -1,15 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "static.alchemyapi.io",
-        port: "",
-        pathname: "/**",
-      },
-    ],
+  webpack: (config) => {
+    config.externals.push({
+      'pino-pretty': 'pino-pretty',
+    });
+    return config;
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
