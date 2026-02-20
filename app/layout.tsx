@@ -1,5 +1,6 @@
 import { config } from "@/config";
 import { cookieToInitialState } from "@account-kit/core";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { headers } from "next/headers";
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers initialState={initialState}>{children}</Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
